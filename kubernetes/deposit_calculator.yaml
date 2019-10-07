@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deposit-calculator
+  labels:
+    app: deposit-calculator
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deposit-calculator
+  template:
+    metadata:
+      labels:
+        app: deposit-calculator
+    spec:
+      containers:
+        - name: deposit-calculator
+          image: IMAGE:TAG
+          ports:
+            - containerPort: 5000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: deposit-calculator
+spec:
+  selector:
+    app: deposit-calculator
+  ports:
+    - port: 5000
