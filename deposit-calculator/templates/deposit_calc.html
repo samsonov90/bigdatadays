@@ -1,0 +1,33 @@
+<!doctype html>
+
+<head>
+    <title>Deposit Calculator</title>
+</head>
+
+<h1>Deposit Calculator</h1>
+
+<body>
+
+<div>
+    <form method="POST" action="/">
+        Investment Term:<br>
+        <input type="text" name="investment_term"><br>
+        Deposit Amount:<br>
+        <input type="text" name="deposit_amount"><br>
+        Interest Rate:<br>
+        <input type="text" name="interest_rate"><br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+</div>
+
+<br>
+
+<div>
+    {% if deposit_return %}
+    <p>
+        {% print(" Deposit Return = {}.".format(deposit_return)) %}
+    </p>
+    {% endif %}
+</div>
+
+</body>
