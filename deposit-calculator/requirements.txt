@@ -1,6 +1,6 @@
 Flask==0.12.2
 gunicorn==19.7.1
-requests==2.18.4
+requests==2.20.0
 itsdangerous==0.24
 click==6.7
 Jinja2==2.9.6
