@@ -1,0 +1,5 @@
+service:
+  type: NodePort
+  port: 5000
+
+replicaCount: 3
