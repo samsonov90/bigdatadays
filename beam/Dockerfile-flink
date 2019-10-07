@@ -1,0 +1,7 @@
+ARG FLINK_IMAGE=bigdatadays2019/flink:1.7.1
+
+FROM ${FLINK_IMAGE}
+
+ENV LD_LIBRARY_PATH /lib64
+
+COPY target/beam-job-1.0-SNAPSHOT.jar /opt/flink-1.7.1/lib/
