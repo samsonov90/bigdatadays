@@ -1,0 +1,11 @@
+{
+    "namespace": "bigdatadays",
+    "name": "deposit_data",
+    "type": "record",
+    "fields": [
+        {"name": "investment_term", "type": "int"},
+        {"name": "deposit_amount", "type": "float"},
+        {"name": "interest_rate", "type": "int"},
+        {"name": "deposit_return", "type": "float"}
+    ]
+}
