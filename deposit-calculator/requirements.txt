@@ -3,6 +3,6 @@ gunicorn==19.7.1
 requests==2.18.4
 itsdangerous==0.24
 click==6.7
-Jinja2==2.9.6
+Jinja2==2.11.3
 Werkzeug==0.12.2
 MarkupSafe==1.0
